@@ -48,3 +48,21 @@ php artisan fetch:albums
 php artisan fetch:photos
 php artisan fetch:posts
 php artisan fetch:comments
+
+
+🔗 API Endpoints
+You can test the following REST API endpoints:
+
+
+| Endpoint        | Method | Description             |
+| --------------- | ------ | ----------------------- |
+| `/api/register` | POST   | Register a new user     |
+| `/api/login`    | POST   | Login and receive token |
+| `/api/users`    | GET    | Get all users           |
+| `/api/todos`    | GET    | Get all todos           |
+| `/api/albums`   | GET    | Get all albums          |
+| `/api/photos`   | GET    | Get all photos          |
+| `/api/posts`    | GET    | Get all posts           |
+| `/api/comments` | GET    | Get all comments        |
+
+Base URL: http://localhost:8000
