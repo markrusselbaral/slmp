@@ -27,7 +27,7 @@
 					"formdata": [
 						{
 							"key": "email",
-							"value": "sample@gmail.com",
+							"value": "testing@gmail.com",
 							"type": "text"
 						},
 						{
@@ -85,13 +85,214 @@
 		{
 			"name": "LOGIN",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|tVrGAco5bDObOhxWDZzRmDBl1KvqYEaBZ0sIhnUyb1731d30",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sample@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/login",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "USERS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|a6noFojwsrSx6Ff6ZpT5A2L5IYsSR1L8BYgKcHNi0ceb4537",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/users",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mark",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "mark@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"disabled": true
+						},
+						{
+							"key": "c_password",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TODOS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|a6noFojwsrSx6Ff6ZpT5A2L5IYsSR1L8BYgKcHNi0ceb4537",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/todos",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALBUMS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|a6noFojwsrSx6Ff6ZpT5A2L5IYsSR1L8BYgKcHNi0ceb4537",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/albums",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PHOTOS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|a6noFojwsrSx6Ff6ZpT5A2L5IYsSR1L8BYgKcHNi0ceb4537",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/photos",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTS",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -134,13 +335,13 @@
 					]
 				},
 				"url": {
-					"raw": "{{baseURL}}/api/users",
+					"raw": "{{baseURL}}/api/posts",
 					"host": [
 						"{{baseURL}}"
 					],
 					"path": [
 						"api",
-						"users"
+						"posts"
 					],
 					"query": [
 						{
@@ -169,62 +370,30 @@
 			"response": []
 		},
 		{
-			"name": "TODOS",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "ALBUMS",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseURL}}/api/albums",
-					"host": [
-						"{{baseURL}}"
-					],
-					"path": [
-						"api",
-						"albums"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "PHOTOS",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseURL}}/api/photos",
-					"host": [
-						"{{baseURL}}"
-					],
-					"path": [
-						"api",
-						"photos"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POSTS",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
 			"name": "COMMENTS",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|a6noFojwsrSx6Ff6ZpT5A2L5IYsSR1L8BYgKcHNi0ceb4537",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/comments",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"comments"
+					]
+				}
 			},
 			"response": []
 		}
