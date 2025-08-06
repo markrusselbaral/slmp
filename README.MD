@@ -1,5 +1,16 @@
-FOLLOW THESE STEPS
+# SLMP Laravel App
 
+This Laravel application fetches and stores data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/) and exposes a RESTful API secured with Basic Authentication.
+
+---
+
+## 🚀 Getting Started
+
+### 🛠️ Installation
+
+Follow these steps to set up the project locally:
+
+```bash
 1. git clone https://github.com/markrusselbaral/slmp.git
 2. cd slmp
 3. docker-compose build
@@ -12,13 +23,28 @@ FOLLOW THESE STEPS
 10. php artisan db:seed
 
 
-🔐 API User Credentials
-You can use the following credentials to authenticate API requests:
+
+🔐 API Authentication
+Use the following credentials to access protected API routes (Basic Auth):
 
 Email: testemail@gmail.com
 
 Password: password123
 
 📬 Postman Collection
+To test the API, import the Postman collection file included in the project root:
 
-Import the provided Postman collection located in the project root: SLMP.postman_collection.json
+SLMP.postman_collection.json
+
+
+
+
+📥 Fetching External Data
+Run the following Artisan commands to fetch and store data from JSONPlaceholder:
+
+php artisan fetch:users
+php artisan fetch:todos
+php artisan fetch:albums
+php artisan fetch:photos
+php artisan fetch:posts
+php artisan fetch:comments
