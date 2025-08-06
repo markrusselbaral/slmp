@@ -102,7 +102,7 @@
 					"formdata": [
 						{
 							"key": "email",
-							"value": "sample@gmail.com",
+							"value": "testing@gmail.com",
 							"type": "text"
 						},
 						{
