@@ -16,7 +16,9 @@ FOLLOW THESE STEPS
 You can use the following credentials to authenticate API requests:
 
 Email: testemail@gmail.com
+
 Password: password123
 
 📬 Postman Collection
+
 Import the provided Postman collection located in the project root: SLMP.postman_collection.json
