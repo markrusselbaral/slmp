@@ -4,7 +4,7 @@
 		"name": "SLMP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "46905891",
-		"_collection_link": "https://markrusselbaral.postman.co/workspace/Mark-Russel-Baral's-Workspace~1cfac3b9-b29f-42c4-8eb0-eea016501b5f/collection/46905891-2862e86d-bb9b-47c9-b756-5411cea7ff53?action=share&source=collection_link&creator=46905891"
+		"_collection_link": "https://markrusselbaral.postman.co/workspace/1cfac3b9-b29f-42c4-8eb0-eea016501b5f/collection/46905891-2862e86d-bb9b-47c9-b756-5411cea7ff53?action=share&source=collection_link&creator=46905891"
 	},
 	"item": [
 		{
@@ -396,6 +396,13 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8000",
+			"type": "default"
 		}
 	]
 }
